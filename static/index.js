@@ -21,16 +21,15 @@ function handleError(error) {
 
 async function initializeSession() {
   console.log('initializeSession');
+  login.style.display = 'none';
+  dashboard.style.display = 'flex';
   session = OT.initSession(apiKey, sessionId);
   subscribersEl.session = session;
   subscribersEl.token = token;
   chatEl.session = session;
   console.log('nameInput.value: ', nameInput.value);
   chatEl.username = nameInput.value;
-
-  login.style.display = 'none';
-  dashboard.style.display = 'flex';
-
+  
   leaveBtn.addEventListener('click', () => {
     session.disconnect();
     dashboard.style.display = 'none';
