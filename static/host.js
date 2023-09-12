@@ -5,7 +5,6 @@ const dashboard = document.querySelector('#dashboard');
 const nameInput = document.querySelector('#name');
 const enterBtn = document.querySelector('#enter-button');
 const leaveBtn = document.querySelector('#leave-button');
-const chatEl = document.querySelector('video-chat');
 
 let apiKey;
 let sessionId;
