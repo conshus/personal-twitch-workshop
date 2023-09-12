@@ -5,7 +5,6 @@ const dashboard = document.querySelector('#dashboard');
 const nameInput = document.querySelector('#name');
 const enterBtn = document.querySelector('#enter-button');
 const leaveBtn = document.querySelector('#leave-button');
-const chatEl = document.querySelector('video-chat');
 
 let apiKey;
 let sessionId;
@@ -26,9 +25,6 @@ async function initializeSession() {
   session = OT.initSession(apiKey, sessionId);
   subscribersEl.session = session;
   subscribersEl.token = token;
-  chatEl.session = session;
-  console.log('nameInput.value: ', nameInput.value);
-  chatEl.username = nameInput.value;
   
   leaveBtn.addEventListener('click', () => {
     session.disconnect();
