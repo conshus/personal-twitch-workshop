@@ -25,8 +25,6 @@ async function initializeSession() {
   session = OT.initSession(apiKey, sessionId);
   publisherEl.session = session;
   publisherEl.token = token;
-  chatEl.session = session;
-  chatEl.username = nameInput.value;
 
   leaveBtn.addEventListener('click', () => {
     session.disconnect();
