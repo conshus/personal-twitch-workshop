@@ -1,2 +1,1 @@
-# personal-twitch-workshop
-Personal Twitch Workshop
+# Personal Twitch Workshop
